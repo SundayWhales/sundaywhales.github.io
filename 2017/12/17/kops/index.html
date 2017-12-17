@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Tech Blog">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="whales">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="kops"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Tech Blog" />
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="SundayWhales"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>kops - SundayWhales</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Configurable Title</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/SundayWhales/sundaywhales.github.io">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>kops</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2017-12-17
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/k8s/">#k8s</a> <a href="/tags/kubernetes/">#kubernetes</a> <a href="/tags/docker/">#docker</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/k8s/">k8s</a>
+
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p align="center"><br>  <img src="img/k8s-aws.png"> <br></p>
+
+<h1 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h1><h2 id="Install-kops"><a href="#Install-kops" class="headerlink" title="Install kops"></a>Install kops</h2><p>Before we can bring up the cluster we need to <a href="install.md">install the CLI tool</a> <code>kops</code>.</p>
+<h2 id="Install-kubectl"><a href="#Install-kubectl" class="headerlink" title="Install kubectl"></a>Install kubectl</h2><p>In order to control Kubernetes clusters we need to <a href="install.md">install the CLI tool</a> <code>kubectl</code>.</p>
+<h4 id="Other-Platforms"><a href="#Other-Platforms" class="headerlink" title="Other Platforms"></a>Other Platforms</h4><ul>
+<li><p><a href="https://github.com/kubernetes/kubernetes/releases/latest" target="_blank" rel="noopener">Kubernetes Latest Release</a></p>
+</li>
+<li><p><a href="http://kubernetes.io/docs/user-guide/prereqs/" target="_blank" rel="noopener">Installation Guide</a></p>
+</li>
+</ul>
+<h2 id="Setup-your-environment"><a href="#Setup-your-environment" class="headerlink" title="Setup your environment"></a>Setup your environment</h2><h3 id="AWS"><a href="#AWS" class="headerlink" title="AWS"></a>AWS</h3><p>In order to correctly prepare your AWS account for <code>kops</code>, we require you to<br>install the AWS CLI tools, and have API credentials for an account that has<br>the permissions to create a new IAM account for <code>kops</code> later in the guide.</p>
+<p>Once you’ve <a href="install.md">installed the AWS CLI tools</a> and have correctly setup<br>your system to use the official AWS methods of registering security credentials<br>as <a href="https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#specifying-credentials" target="_blank" rel="noopener">defined here</a> we’ll be ready to run <code>kops</code>, as it uses the Go AWS SDK.</p>
+<h4 id="Setup-IAM-user"><a href="#Setup-IAM-user" class="headerlink" title="Setup IAM user"></a>Setup IAM user</h4><p>In order to build clusters within AWS we’ll create a dedicated IAM user for<br><code>kops</code>.  This user requires API credentials in order to use <code>kops</code>.  Create<br>the user, and credentials, using the <a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console" target="_blank" rel="noopener">AWS console</a>.</p>
+<p>The <code>kops</code> user will require the following IAM permissions to function properly:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">AmazonEC2FullAccess</span><br><span class="line">AmazonRoute53FullAccess</span><br><span class="line">AmazonS3FullAccess</span><br><span class="line">IAMFullAccess</span><br><span class="line">AmazonVPCFullAccess</span><br></pre></td></tr></table></figure>
+<p>You can create the kops IAM user from the command line using the following:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">aws iam create-group --group-name kops</span><br><span class="line"></span><br><span class="line">aws iam attach-group-policy --policy-arn arn:aws:iam::aws:policy/AmazonEC2FullAccess --group-name kops</span><br><span class="line">aws iam attach-group-policy --policy-arn arn:aws:iam::aws:policy/AmazonRoute53FullAccess --group-name kops</span><br><span class="line">aws iam attach-group-policy --policy-arn arn:aws:iam::aws:policy/AmazonS3FullAccess --group-name kops</span><br><span class="line">aws iam attach-group-policy --policy-arn arn:aws:iam::aws:policy/IAMFullAccess --group-name kops</span><br><span class="line">aws iam attach-group-policy --policy-arn arn:aws:iam::aws:policy/AmazonVPCFullAccess --group-name kops</span><br><span class="line"></span><br><span class="line">aws iam create-user --user-name kops</span><br><span class="line"></span><br><span class="line">aws iam add-user-to-group --user-name kops --group-name kops</span><br><span class="line"></span><br><span class="line">aws iam create-access-key --user-name kops</span><br></pre></td></tr></table></figure>
+<p>You should record the SecretAccessKey and AccessKeyID in the returned JSON<br>output, and then use them below:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># configure the aws client to use your new IAM user</span></span><br><span class="line">aws configure           <span class="comment"># Use your new access and secret key here</span></span><br><span class="line">aws iam list-users      <span class="comment"># you should see a list of all your IAM users here</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Because "aws configure" doesn't export these vars for kops to use, we export them now</span></span><br><span class="line"><span class="built_in">export</span> AWS_ACCESS_KEY_ID=$(aws configure get aws_access_key_id)</span><br><span class="line"><span class="built_in">export</span> AWS_SECRET_ACCESS_KEY=$(aws configure get aws_secret_access_key)</span><br></pre></td></tr></table></figure>
+<h2 id="Configure-DNS"><a href="#Configure-DNS" class="headerlink" title="Configure DNS"></a>Configure DNS</h2><p>Note: If you are using Kops 1.6.2 or later, then DNS configuration is<br>optional. Instead, a gossip-based cluster can be easily created. The<br>only requirement to trigger this is to have the cluster name end with<br><code>.k8s.local</code>. If a gossip-based cluster is created then you can skip<br>this section.</p>
+<p>In order to build a Kubernetes cluster with <code>kops</code>, we need to prepare<br>somewhere to build the required DNS records.  There are three scenarios<br>below and you should choose the one that most closely matches your AWS<br>situation.</p>
+<h3 id="Scenario-1a-A-Domain-purchased-hosted-via-AWS"><a href="#Scenario-1a-A-Domain-purchased-hosted-via-AWS" class="headerlink" title="Scenario 1a: A Domain purchased/hosted via AWS"></a>Scenario 1a: A Domain purchased/hosted via AWS</h3><p>If you bought your domain with AWS, then you should already have a hosted zone<br>in Route53.  If you plan to use this domain then no more work is needed.</p>
+<p>In this example you own <code>example.com</code> and your records for Kubernetes would<br>look like <code>etcd-us-east-1c.internal.clustername.example.com</code></p>
+<h3 id="Scenario-1b-A-subdomain-under-a-domain-purchased-hosted-via-AWS"><a href="#Scenario-1b-A-subdomain-under-a-domain-purchased-hosted-via-AWS" class="headerlink" title="Scenario 1b: A subdomain under a domain purchased/hosted via AWS"></a>Scenario 1b: A subdomain under a domain purchased/hosted via AWS</h3><p>In this scenario you want to contain all kubernetes records under a subdomain<br>of a domain you host in Route53.  This requires creating a second hosted zone<br>in route53, and then setting up route delegation to the new zone.</p>
+<p>In this example you own <code>example.com</code> and your records for Kubernetes would<br>look like <code>etcd-us-east-1c.internal.clustername.subdomain.example.com</code></p>
+<p>This is copying the NS servers of your <strong>SUBDOMAIN</strong> up to the <strong>PARENT</strong><br>domain in Route53.  To do this you should:</p>
+<ul>
+<li>Create the subdomain, and note your <strong>SUBDOMAIN</strong> name servers (If you have<br>already done this you can also <a href="ns.md">get the values</a>)</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Note: This example assumes you have jq installed locally.</span></span><br><span class="line">ID=$(uuidgen) &amp;&amp; aws route53 create-hosted-zone --name subdomain.example.com --<span class="built_in">caller</span>-reference <span class="variable">$ID</span> | \</span><br><span class="line">    jq .DelegationSet.NameServers</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Note your <strong>PARENT</strong> hosted zone id</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Note: This example assumes you have jq installed locally.</span></span><br><span class="line">aws route53 list-hosted-zones | jq <span class="string">'.HostedZones[] | select(.Name=="example.com.") | .Id'</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>Create a new JSON file with your values (<code>subdomain.json</code>)</li>
+</ul>
+<p>Note: The NS values here are for the <strong>SUBDOMAIN</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;Comment&quot;: &quot;Create a subdomain NS record in the parent domain&quot;,</span><br><span class="line">  &quot;Changes&quot;: [</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;Action&quot;: &quot;CREATE&quot;,</span><br><span class="line">      &quot;ResourceRecordSet&quot;: &#123;</span><br><span class="line">        &quot;Name&quot;: &quot;subdomain.example.com&quot;,</span><br><span class="line">        &quot;Type&quot;: &quot;NS&quot;,</span><br><span class="line">        &quot;TTL&quot;: 300,</span><br><span class="line">        &quot;ResourceRecords&quot;: [</span><br><span class="line">          &#123;</span><br><span class="line">            &quot;Value&quot;: &quot;ns-1.awsdns-1.co.uk&quot;</span><br><span class="line">          &#125;,</span><br><span class="line">          &#123;</span><br><span class="line">            &quot;Value&quot;: &quot;ns-2.awsdns-2.org&quot;</span><br><span class="line">          &#125;,</span><br><span class="line">          &#123;</span><br><span class="line">            &quot;Value&quot;: &quot;ns-3.awsdns-3.com&quot;</span><br><span class="line">          &#125;,</span><br><span class="line">          &#123;</span><br><span class="line">            &quot;Value&quot;: &quot;ns-4.awsdns-4.net&quot;</span><br><span class="line">          &#125;</span><br><span class="line">        ]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Apply the <strong>SUBDOMAIN</strong> NS records to the <strong>PARENT</strong> hosted zone.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">aws route53 change-resource-record-sets \</span><br><span class="line"> --hosted-zone-id &lt;parent-zone-id&gt; \</span><br><span class="line"> --change-batch file://subdomain.json</span><br></pre></td></tr></table></figure>
+<p>Now traffic to <code>*.subdomain.example.com</code> will be routed to the correct subdomain hosted zone in Route53.</p>
+<h3 id="Scenario-2-Setting-up-Route53-for-a-domain-purchased-with-another-registrar"><a href="#Scenario-2-Setting-up-Route53-for-a-domain-purchased-with-another-registrar" class="headerlink" title="Scenario 2: Setting up Route53 for a domain purchased with another registrar"></a>Scenario 2: Setting up Route53 for a domain purchased with another registrar</h3><p>If you bought your domain elsewhere, and would like to dedicate the entire domain to AWS you should follow the guide <a href="http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-transfer-to-route-53.html" target="_blank" rel="noopener">here</a></p>
+<h3 id="Scenario-3-Subdomain-for-clusters-in-route53-leaving-the-domain-at-another-registrar"><a href="#Scenario-3-Subdomain-for-clusters-in-route53-leaving-the-domain-at-another-registrar" class="headerlink" title="Scenario 3: Subdomain for clusters in route53, leaving the domain at another registrar"></a>Scenario 3: Subdomain for clusters in route53, leaving the domain at another registrar</h3><p>If you bought your domain elsewhere, but <strong>only want to use a subdomain in AWS<br>Route53</strong> you must modify your registrar’s NS (NameServer) records.  We’ll create<br>a hosted zone in Route53, and then migrate the subdomain’s NS records to your<br>other registrar.</p>
+<p>You might need to grab <a href="https://github.com/stedolan/jq/wiki/Installation" target="_blank" rel="noopener">jq</a><br>for some of these instructions.</p>
+<ul>
+<li>Create the subdomain, and note your name servers (If you have already done<br>this you can also <a href="ns.md">get the values</a>)</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ID=$(uuidgen) &amp;&amp; aws route53 create-hosted-zone --name subdomain.example.com --<span class="built_in">caller</span>-reference <span class="variable">$ID</span> | jq .DelegationSet.NameServers</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>You will now go to your registrar’s page and log in. You will need to create a<br>new <strong>SUBDOMAIN</strong>, and use the 4 NS records received from the above command for the new<br><strong>SUBDOMAIN</strong>. This <strong>MUST</strong> be done in order to use your cluster. Do <strong>NOT</strong><br>change your top level NS record, or you might take your site offline.</p>
+</li>
+<li><p>Information on adding NS records with<br><a href="https://www.godaddy.com/help/set-custom-nameservers-for-domains-registered-with-godaddy-12317" target="_blank" rel="noopener">Godaddy.com</a></p>
+</li>
+<li>Information on adding NS records with <a href="https://cloud.google.com/dns/update-name-servers" target="_blank" rel="noopener">Google Cloud<br>Platform</a></li>
+</ul>
+<h4 id="Using-Public-Private-DNS-Kops-1-5"><a href="#Using-Public-Private-DNS-Kops-1-5" class="headerlink" title="Using Public/Private DNS (Kops 1.5+)"></a>Using Public/Private DNS (Kops 1.5+)</h4><p>By default the assumption is that NS records are publically available.  If you<br>require private DNS records you should modify the commands we run later in this<br>guide to include:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kops create cluster --dns private $NAME</span><br></pre></td></tr></table></figure>
+<p>If you have a mix of public and private zones, you will also need to include the <code>--dns-zone</code> argument with the hosted zone id you wish to deploy in:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kops create cluster --dns private --dns-zone ZABCDEFG $NAME</span><br></pre></td></tr></table></figure>
+<h2 id="Testing-your-DNS-setup"><a href="#Testing-your-DNS-setup" class="headerlink" title="Testing your DNS setup"></a>Testing your DNS setup</h2><p>This section is not be required if a gossip-based cluster is created.</p>
+<p>You should now able to dig your domain (or subdomain) and see the AWS Name<br>Servers on the other end.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dig ns subdomain.example.com</span><br></pre></td></tr></table></figure>
+<p>Should return something similar to:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">;; ANSWER SECTION:</span><br><span class="line">subdomain.example.com.        172800  IN  NS  ns-1.awsdns-1.net.</span><br><span class="line">subdomain.example.com.        172800  IN  NS  ns-2.awsdns-2.org.</span><br><span class="line">subdomain.example.com.        172800  IN  NS  ns-3.awsdns-3.com.</span><br><span class="line">subdomain.example.com.        172800  IN  NS  ns-4.awsdns-4.co.uk.</span><br></pre></td></tr></table></figure>
+<p>This is a critical component of setting up clusters. If you are experiencing<br>problems with the Kubernetes API not coming up, chances are something is wrong<br>with the cluster’s DNS.</p>
+<p><strong>Please DO NOT MOVE ON until you have validated your NS records! This is not be required if a gossip-based cluster is created.</strong></p>
+<h2 id="Cluster-State-storage"><a href="#Cluster-State-storage" class="headerlink" title="Cluster State storage"></a>Cluster State storage</h2><p>In order to store the state of your cluster, and the representation of your<br>cluster, we need to create a dedicated S3 bucket for <code>kops</code> to use.  This<br>bucket will become the source of truth for our cluster configuration.  In<br>this guide we’ll call this bucket <code>example-com-state-store</code>, but you should<br>add a custom prefix as bucket names need to be unique.</p>
+<p>We recommend keeping the creation of this bucket confined to us-east-1,<br>otherwise more work will be required.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">aws s3api create-bucket \</span><br><span class="line">    --bucket prefix-example-com-state-store \</span><br><span class="line">    --region us-east-1</span><br></pre></td></tr></table></figure>
+<p>Note: S3 requires <code>--create-bucket-configuration LocationConstraint=&lt;region&gt;</code> for regions other than <code>us-east-1</code>.</p>
+<p>Note: We <strong>STRONGLY</strong> recommend versioning your S3 bucket in case you ever need<br>to revert or recover a previous state store.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aws s3api put-bucket-versioning --bucket prefix-example-com-state-store  --versioning-configuration Status=Enabled</span><br></pre></td></tr></table></figure>
+<h3 id="Sharing-an-S3-bucket-across-multiple-accounts"><a href="#Sharing-an-S3-bucket-across-multiple-accounts" class="headerlink" title="Sharing an S3 bucket across multiple accounts"></a>Sharing an S3 bucket across multiple accounts</h3><p>It is possible to use a single S3 bucket for storing kops state for clusters<br>located in different accounts, by using <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/example-walkthroughs-managing-access-example2.html#access-policies-walkthrough-cross-account-permissions-acctA-tasks" target="_blank" rel="noopener">cross-account bucket policies</a>.</p>
+<p>Kops will be able to use buckets configured with cross-account policies by default.</p>
+<p>In this case you may want to override the object ACLs which kops places on the<br>state files, as default AWS ACLs will make it possible for an account that has<br>delegated access to write files that the bucket owner can not read.</p>
+<p>To do this you should set the environment variable <code>KOPS_STATE_S3_ACL</code> to the<br>preferred object ACL, for example <code>bucket-owner-full-control</code>.</p>
+<p>For available canned ACLs please consult <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl" target="_blank" rel="noopener">Amazon’s S3<br>documentation</a>.</p>
+<h1 id="Creating-your-first-cluster"><a href="#Creating-your-first-cluster" class="headerlink" title="Creating your first cluster"></a>Creating your first cluster</h1><h2 id="Prepare-local-environment"><a href="#Prepare-local-environment" class="headerlink" title="Prepare local environment"></a>Prepare local environment</h2><p>We’re ready to start creating our first cluster!  Let’s first set up a few<br>environment variables to make this process easier.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> NAME=myfirstcluster.example.com</span><br><span class="line"><span class="built_in">export</span> KOPS_STATE_STORE=s3://prefix-example-com-state-store</span><br></pre></td></tr></table></figure>
+<p>For a gossip-based cluster, make sure the name ends with <code>k8s.local</code>. For example:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> NAME=myfirstcluster.k8s.local</span><br><span class="line"><span class="built_in">export</span> KOPS_STATE_STORE=s3://prefix-example-com-state-store</span><br></pre></td></tr></table></figure>
+<p>Note: You don’t have to use environmental variables here. You can always define<br>the values using the –name and –state flags later.</p>
+<h2 id="Create-cluster-configuration"><a href="#Create-cluster-configuration" class="headerlink" title="Create cluster configuration"></a>Create cluster configuration</h2><p>We will need to note which availability zones are available to us. In this<br>example we will be deploying our cluster to the us-west-2 region.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aws ec2 describe-availability-zones --region us-west-2</span><br></pre></td></tr></table></figure>
+<p>Below is a create cluster command.  We’ll use the most basic example possible,<br>with more verbose examples in <a href="high_availability.md#advanced-example">high availability</a>.<br>The below command will generate a cluster configuration, but not start building<br>it. Make sure that you have generated SSH key pair before creating the cluster.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">kops create cluster \</span><br><span class="line">    --zones us-west-2a \</span><br><span class="line">    <span class="variable">$&#123;NAME&#125;</span></span><br></pre></td></tr></table></figure>
+<p>All instances created by <code>kops</code> will be built within ASG (Auto Scaling Groups),<br>which means each instance will be automatically monitored and rebuilt by AWS if<br>it suffers any failure.</p>
+<h2 id="Customize-Cluster-Configuration"><a href="#Customize-Cluster-Configuration" class="headerlink" title="Customize Cluster Configuration"></a>Customize Cluster Configuration</h2><p>Now we have a cluster configuration, we can look at every aspect that defines<br>our cluster by editing the description.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kops edit cluster <span class="variable">$&#123;NAME&#125;</span></span><br></pre></td></tr></table></figure>
+<p>This opens your editor (as defined by $EDITOR) and allows you to edit the<br>configuration.  The configuration is loaded from the S3 bucket we created<br>earlier, and automatically updated when we save and exit the editor.</p>
+<p>We’ll leave everything set to the defaults for now, but the rest of the <code>kops</code><br>documentation covers additional settings and configuration you can enable.</p>
+<h2 id="Build-the-Cluster"><a href="#Build-the-Cluster" class="headerlink" title="Build the Cluster"></a>Build the Cluster</h2><p>Now we take the final step of actually building the cluster.  This’ll take a<br>while.  Once it finishes you’ll have to wait longer while the booted instances<br>finish downloading Kubernetes components and reach a “ready” state.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kops update cluster <span class="variable">$&#123;NAME&#125;</span> --yes</span><br></pre></td></tr></table></figure>
+<h2 id="Use-the-Cluster"><a href="#Use-the-Cluster" class="headerlink" title="Use the Cluster"></a>Use the Cluster</h2><p>Remember when you installed <code>kubectl</code> earlier? The configuration for your<br>cluster was automatically generated and written to <code>~/.kube/config</code> for you!</p>
+<p>A simple Kubernetes API call can be used to check if the API is online and<br>listening. Let’s use <code>kubectl</code> to check the nodes.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl get nodes</span><br></pre></td></tr></table></figure>
+<p>You will see a list of nodes that should match the <code>--zones</code> flag defined<br>earlier. This is a great sign that your Kubernetes cluster is online and<br>working.</p>
+<p>Also <code>kops</code> ships with a handy validation tool that can be ran to ensure your<br>cluster is working as expected.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kops validate cluster</span><br></pre></td></tr></table></figure>
+<p>You can look at all the system components with the following command.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl -n kube-system get po</span><br></pre></td></tr></table></figure>
+<h2 id="Delete-the-Cluster"><a href="#Delete-the-Cluster" class="headerlink" title="Delete the Cluster"></a>Delete the Cluster</h2><p>Running a Kubernetes cluster within AWS obviously costs money, and so you may<br>want to delete your cluster if you are finished running experiments.</p>
+<p>You can preview all of the AWS resources that will be destroyed when the cluster<br>is deleted by issuing the following command.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kops delete cluster --name $&#123;NAME&#125;</span><br></pre></td></tr></table></figure>
+<p>When you are sure you want to delete your cluster, issue the delete command<br>with the <code>--yes</code> flag. Note that this command is very destructive, and will<br>delete your cluster and everything contained within it!</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kops delete cluster --name $&#123;NAME&#125; --yes</span><br></pre></td></tr></table></figure>
+<h1 id="What’s-next"><a href="#What’s-next" class="headerlink" title="What’s next?"></a>What’s next?</h1><p>We’ve barely scratched the surface of the capabilities of <code>kops</code> in this guide,<br>and we recommend researching <a href="commands.md#other-interesting-modes">other interesting<br>modes</a> to learn more about generating<br>Terraform configurations, or running your cluster in an HA (Highly Available)<br>mode.</p>
+<p>The <a href="cluster_spec.md">cluster spec docs</a> can help to configure these “other<br>interesting modes”. Also be sure to check out how to run a <a href="topology.md">private network<br>topology</a> in AWS.</p>
+<h2 id="Feedback"><a href="#Feedback" class="headerlink" title="Feedback"></a>Feedback</h2><p>There’s an incredible team behind Kops and we encourage you to reach out to the<br>community on the Kubernetes<br>Slack(<a href="http://slack.k8s.io/" target="_blank" rel="noopener">http://slack.k8s.io/</a>).  Bring your<br>questions, comments, and requests and meet the people behind the project!</p>
+<h2 id="Legal"><a href="#Legal" class="headerlink" title="Legal"></a>Legal</h2><p><em>AWS Trademark used with limited permission under the <a href="https://aws.amazon.com/trademark-guidelines/" target="_blank" rel="noopener">AWS Trademark<br>Guidelines</a></em></p>
+<p><em>Kubernetes Logo used with permission under the <a href="https://github.com/kubernetes/kubernetes/blob/master/logo/usage_guidelines.md" target="_blank" rel="noopener">Kubernetes Branding<br>Guidelines</a></em></p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/SundayWhales/sundaywhales.github.io" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2017 whales<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
